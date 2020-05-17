@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fluentui/react": "^7.114.2",
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
     "js-cookie": "^2.2.0",

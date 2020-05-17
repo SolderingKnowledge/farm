@@ -1,10 +1,15 @@
 import App from "next/app";
+import Layout from "../components/_App/Layout.js";
 
-class MyApp extends App {
+class Farm extends App {
   render() {
     const { Component } = this.props;
-    return <Component />;
+    return (
+      <Layout>
+          <Component />
+      </Layout>
+    );
   }
 }
 
-export default MyApp;
+export default Farm;
