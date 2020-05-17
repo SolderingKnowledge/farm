@@ -1,5 +1,5 @@
 function Account() {
-  return <>account</>;
+  return <>My account</>;
 }
 
 export default Account;
