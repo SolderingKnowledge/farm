@@ -1,7 +1,7 @@
 {
-  "name": "react-reserve",
+  "name": "farm",
   "version": "1.0.0",
-  "description": "Project for MERN Stack - The Complete Guide",
+  "description": "Aplication for farmers",
   "main": "index.js",
   "scripts": {
     "dev": "next",
