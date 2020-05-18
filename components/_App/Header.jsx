@@ -1,6 +1,17 @@
 import { Menu, Container, Image , Icon} from "semantic-ui-react";
-import { useRouter } from "next/router"; //router to get current page value
+import Router, { useRouter } from "next/router"; //router to get current page value
 import Link from "next/link";
+import Progress from "nprogress";
+
+Router.onRouteChangeStart = () =>
+Progress.start();
+
+Router.onRouteChangeComplete = () =>
+Progress.done();
+
+Router.onRouteChangeError = () => 
+Progress.done();
+
 
 const isActive= route =>  {
     return route === useRouter().pathname;
@@ -15,7 +26,7 @@ const Header = () => {
                 <Link href="/">
                     <Menu.Item header active={isActive("/")}>
                         <Image size="mini" src="/static/farm.png" style={{height: "40px", width: "40px"}} />
-                    Farm
+                    Farmers Market
                 </Menu.Item>
                 </Link>
 
